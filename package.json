@@ -1,0 +1,20 @@
+{
+    "name": "webcom.dk", 
+	"version": "1.0.0",
+    "description": "website for webcom.dk", 
+	"author": "Jacob Friis Saxberg <jacob@webcom.dk>",
+	"private": "true",
+    "dependencies": {}, 
+    "devDependencies": {
+        "coffeecup": "x", 
+        "uglify-js": "x",
+		"less": "x",
+		"recess": "x"
+    }, 
+	"preferGlobal": "true",
+    "homepage": "http://webcom.dk", 
+    "repository": {
+        "type": "git", 
+        "url": "git://github.com/webjay/webcom.dk"
+    }
+}
