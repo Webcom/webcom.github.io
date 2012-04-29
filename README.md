@@ -9,4 +9,5 @@
 
 ## make website
 
-make webcom
+1. npm install -g coffeecup
+2. make webcom
