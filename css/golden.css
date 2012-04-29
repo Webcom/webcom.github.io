@@ -1,0 +1,62 @@
+h1, h2, h3 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 500;
+}
+h2 {
+	font-size: 22px;
+}
+
+#contact {
+	margin-top: 30px;
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter:alpha(opacity=40);
+	white-space: nowrap;
+}
+#contact a {
+	color: #333;
+}
+#contact a:hover {
+	color: #08C;
+}
+#contact:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+#brand {
+	position: relative;
+	top: 60px;
+	left: 215px;
+	width: 220px;
+}
+@media (max-width: 767px) {
+	#brand {
+		left: 0;
+		margin: 0 auto;
+	}
+}
+#logo {
+	width: 220px;
+	height: 32px;
+}
+#tagline {
+	margin-top: 24px;
+	color: #999;
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#main {
+	position: relative;
+	top: 150px;
+}
+
+.manchet {
+	font-weight: normal;
+	margin-bottom: 23px;
+}
+.manchet:first-child {
+	margin-top: 18px;
+}

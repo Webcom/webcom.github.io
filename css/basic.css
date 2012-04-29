@@ -1,0 +1,50 @@
+#mainhead {
+	margin-top: 40px;
+	height: 120px;
+}
+#logo {
+	width: 220px;
+	height: 32px;
+}
+#tagline {
+	line-height: 32px;
+	color: #999999;
+}
+
+.bigtxt {
+	font-weight: normal;
+}
+
+.center {
+	text-align: center;
+}
+
+.vcard dl, .vcard dl dt, .vcard dl dd {
+	display: inline;
+}
+.vcard dl dt {
+	font-weight: normal;
+}
+
+#main {
+	height: 160px;
+}
+
+#startups .row {
+	margin-bottom: 13.3px;
+}
+
+/*   Sticky Footer by Ryan Fait http://ryanfait.com   */
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+#StickyFooterWrapper {
+    min-height: 100%;
+    margin: 0 auto -58px; /* the bottom margin is the negative value of the footer's height */
+}
+#mainfooter, #pushfooter {
+    height: 58px; /* .push must be the same height as .footer */
+}
