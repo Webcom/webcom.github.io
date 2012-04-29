@@ -7,3 +7,6 @@
 3. make -C _dev/bootstrap bootstrap
 4. mv _dev/bootstrap/bootstrap ./
 
+## make website
+
+make webcom
