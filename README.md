@@ -10,4 +10,4 @@
 ## make website
 
 1. npm install -g coffeecup
-2. make webcom
+2. make -C _dev webcom
