@@ -12,7 +12,7 @@ html lang: 'en', ->
 	head ->
 		meta charset: 'utf-8'
 		title 'Webcom'
-		meta name: 'viewport', content: 'width=device-width, initial-scale=1.0'
+		meta name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1'
 		meta name: 'description', content: 'Fine web since 1996'
 		meta name: 'author', content: 'Jacob Friis Saxberg'
 		link rel: 'stylesheet', href: 'bootstrap/css/bootstrap.min.css'
