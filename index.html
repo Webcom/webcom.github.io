@@ -13,7 +13,7 @@
       var GoogleAnalyticsObject = 'ga';
       var ga = ['create', 'UA-183817-3', 'auto', 'send', 'pageview'];
       ga.l = 1 * new Date();
-      document.onload = function () {
+      window.onload = function () {
         var el = document.createElement('script');
         el.src = '//www.google-analytics.com/analytics.js';
         el.async = 1;
