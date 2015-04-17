@@ -10,14 +10,16 @@
       }
     </style>
     <script>
-      var GoogleAnalyticsObject = 'ga';
-      var ga = ['create', 'UA-183817-3', 'auto', 'send', 'pageview'];
-      ga.l = 1 * new Date();
+      window.GoogleAnalyticsObject = 'ga';
+      window.ga = {
+        q: ['create', 'UA-183817-3', 'auto', 'send', 'pageview'],
+        l: 1 * new Date()
+      };
       window.onload = function () {
         var el = document.createElement('script');
         el.src = '//www.google-analytics.com/analytics.js';
         el.async = 1;
-        document.body.appendChild(el);
+        document.getElementsByTagName('head')[0].appendChild(el);
       };
     </script>
   </head>
