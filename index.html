@@ -1,27 +1,68 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Webcom</title>
-    <style>
-      html {
-        width: 100%;
-        height: 100%;
-        background: url(webcom.png) center center no-repeat;
-      }
-    </style>
-    <script>
-      window.GoogleAnalyticsObject = 'ga';
-      window.ga = {
-        q: ['create', 'UA-183817-3', 'auto', 'send', 'pageview'],
-        l: 1 * new Date()
-      };
-      window.onload = function () {
-        var el = document.createElement('script');
-        el.src = '//www.google-analytics.com/analytics.js';
-        el.async = 1;
-        document.getElementsByTagName('head')[0].appendChild(el);
-      };
-    </script>
-  </head>
-  <body></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Webcom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Fine web since 1996">
+  <meta name="author" content="Jacob Friis Saxberg">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+  <script>var _gaq = ["_setAccount", "UA-183817-3", "_trackPageview"];</script>
+  <script src="http://www.google-analytics.com/ga.js" async="async"></script>
+</head>
+<body>
+  <div class="container">
+    <section id="contact" class="row">
+      <address class="offset10 span2 vcard">
+        <p><i class="icon-bullhorn"></i> <span class="tel">+45 42720871</span></p>
+        <p><i class="icon-comment"></i> <a class="email" href="mailto:info@webcom.dk">info@webcom.dk</a></p>
+      </address>
+    </section>
+    <section id="brand" class="vcard">
+      <img id="logo" src="webcom.png" alt="Webcom">
+      <h1 class="org hide">Webcom</h1>
+      <div id="tagline"><em>“Fine web since 1996”</em></div>
+    </section>
+    <article id="main" class="row">
+      <header class="span3">
+        <h1 class="manchet">The web is constantly evolving.</h1>
+        <h1 class="manchet">Through our passion we play along on the edge which gives us unique knowledge.</h1>
+      </header>
+      <div class="span8 offset1">
+        <section id="startups">
+          <header class="page-header">
+            <h1>Projects <small>At the edge of technology we ship</small></h1>
+          </header>
+          <div class="row">
+            <div class="span4">
+              <h2>Eksperten</h2>
+              <p>Eksperten was launched in 1998 and soon after became the largest IT community in Scandinavia. Eksperten was sold to IDG in 2002 and is still going strong.</p>
+            </div>
+            <div class="span4">
+              <h2>Sharksforum</h2>
+              <p>Sharksforum launched in 2001 as a spinoff from Eksperten. We had plenty of freelance connections but too few who requested them, thus in 2006 we decided to close it.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span4">
+              <h2>Mentory</h2>
+              <p>A mentorship with a learning relationship that benefit through conversation and guidance.</p>
+            </div>
+            <div class="span4">
+              <h2>Webalogic</h2>
+              <p>Content management delivered online. No installation required. Webalogic have served clients since 1998.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span4">
+              <h2>Gignal</h2>
+              <p>Gignal aggregates content created at events and presents it on your site and on physical screens.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</body>
 </html>
