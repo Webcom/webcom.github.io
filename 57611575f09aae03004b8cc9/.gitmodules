@@ -1,3 +1,0 @@
-[submodule "_dev/bootstrap"]
-	path = _dev/bootstrap
-	url = git://github.com/twitter/bootstrap.git
