@@ -1,0 +1,11 @@
+{
+  "name": "webcom.dk",
+  "version": "1.0.0",
+  "repository": "git@github.com:Webcom/webcom.github.io.git",
+  "author": "Jacob Friis Saxberg <jacob@webcom.dk>",
+  "license": "none",
+  "private": true,
+  "devDependencies": {
+    "htmlhint": "0.14.2"
+  }
+}

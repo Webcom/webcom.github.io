@@ -2,88 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Fine web since 1996">
   <title>Webcom</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      font-size: 0.9em;
+      line-height: 1.3;
+    }
+    a {
+      color: #005580;
+      text-decoration: none;
+    }
+    a.inherit {
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1, h2 {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: normal;
+      font-size: 1.9em;
+      line-height: 1.3;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+    h1 small, h2 small {
+      font-size: 0.7em;
+    }
+    small, .muted {
+      color: #999;
+    }
+    .small {
+      font-size: smaller;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 90vw;
+      margin: auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+    #contact {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-end;
+      line-height: 1.8;
+    }
+    @media all and (max-width: 576px) {
+      #contact {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    #branding {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50vw;
+      height: 30vh;
+    }
+    @media all and (max-width: 576px) {
+      #branding {
+        width: auto;
+        height: 150px;
+      }
+    }
+    #branding img {
+      width: 220px;
+      height: 32px;
+    }
+    #branding p {
+      margin-bottom: 0;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #eee;
+    }
+    .flex {
+      flex: 1;
+    }
+    #projects {
+      flex: 3;
+      margin-left: 10vw;
+    }
+    @media all and (max-width: 576px) {
+      #projects {
+        margin-left: initial;
+      }
+    }
+    #projects section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .project {
+      width: 300px;
+      margin: 8px 0;
+    }
+    @media all and (max-width: 576px) {
+      .project {
+        flex-grow: 1;
+      }
+    }
+    .project h2 {
+      margin: 4px 0;
+    }
+    .project p {
+      margin: 0;
+    }
+    .project ul {
+      padding: 0;
+      margin: 6px 0 0 25px;
+    }
+    @media all and (max-width: 576px) {
+      .d-sm-none {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-
 <div class="container">
-  <section id="contact" class="row">
-    <address class="offset10 span2 vcard">
-      <p><i class="icon-bullhorn"></i> <span class="tel">+45 42720871</span></p>
-      <p><i class="icon-comment"></i> <a class="email" href="mailto:jacob@webcom.dk">jacob@webcom.dk</a></p>
-    </address>
-  </section>
-  <section id="brand" class="vcard">
-    <img id="logo" src="img/webcom.png" alt="Webcom">
-    <h1 class="org hide">Webcom ApS</h1>
-    <div id="tagline"><em>“Fine web since 1996”</em></div>
-  </section>
-  <article id="main" class="row">
-    <header class="span3">
-      <h1 class="manchet">The web is constantly evolving.</h1>
-      <h1 class="manchet">Through our passion we play along on the edge which gives us unique knowledge.</h1></header>
-      <div class="span8 offset1">
-        <section id="startups">
-          <header class="page-header">
-            <h1>Projects <small>Non client work</small></h1>
-          </header>
-          <div class="row">
-            <div class="span4">
-              <h2>Eksperten</h2>
-              <p>Eksperten was launched in 1998 and soon after became the largest IT community in Scandinavia. Eksperten was sold to IDG in 2002 and is still going strong.</p>
-            </div>
-            <div class="span4">
-              <h2>Sharksforum</h2>
-              <p>Sharksforum launched in 2001 as a spinoff from Eksperten. We had plenty of freelance connections but too few who requested them, thus in 2006 we decided to close it.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span4">
-              <h2>Webalogic</h2>
-              <p>Content management delivered online. No installation required. Webalogic have served clients since 1998.</p>
-            </div>
-            <div class="span4">
-              <h2>Lorem</h2>
-              <p>Hosted content management.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span4">
-              <h2>Gignal</h2>
-              <p>Gignal aggregates content created at events and presents it on your site and on physical screens.</p>
-            </div>
-            <div class="span4">
-              <h2><small>/neverlaunched</small></h2>
-              <ul class="muted">
-                <li data-testa="Lorem was here again16"><a href="http://www.konfect.com/" class="muted">Konfect</a> ~ Social network connection manager.</li>
-                <li>SwipeSave ~ Savings concept.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span4">
-              <h2><a href="https://svedig.com/">Svedig</a></h2>
-              <p>Exercise with friends, in each your home.</p>
-            </div>
-            <div class="span4">
-              <h2><a href="./munique/">Muniqué</a></h2>
-              <p>Just the newsletters from your inbox.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="span4">
-              <h2><a href="https://emojoe.app/">Emojoe</a></h2>
-              <p>Accountability.</p>
-            </div>
-            <div class="span4"></div>
-          </div>
-        </section>
-      </div>
-    </article>
+  <header id="contact">
+    <a href="tel:+4542720871">+45 42720871</a>
+    <a href="mailto:jacob@webcom.dk">jacob@webcom.dk</a>
+  </header>
+  <div id="branding">
+    <img src="img/webcom.png" alt="Webcom" />
+    <p>
+      <small>
+        <em class="muted">&laquo;&nbsp;Fine web since 1996&nbsp;&raquo;</em>
+      </small>
+    </p>
   </div>
-
-</body></html>
+  <main>
+    <div class="flex d-sm-none">
+      <h1>The web is constantly evolving.</h1>
+      <h2>Through passion we play along on the edge which gives us unique knowledge.</h2>
+    </div>
+    <div id="projects">
+      <h1>Projects <small>Non client work</small></h1>
+      <hr />
+      <section>
+        <div class="project">
+          <h2><a href="http://www.eksperten.dk/" class="inherit">Eksperten</a></h2>
+          <p>Eksperten was launched in 1998 and soon after became the largest IT community in Scandinavia. Eksperten was sold to IDG in 2002 and is still going strong.</p>
+        </div>
+        <div class="project">
+          <h2>Sharksforum</h2>
+          <p>Sharksforum launched in 2001 as a spinoff from Eksperten. We had plenty of freelance connections but too few who requested them, thus in 2006 we decided to close it.</p>
+        </div>
+        <div class="project">
+          <h2>Webalogic</h2>
+          <p>Content management delivered online. No installation required. Webalogic served clients since 1998.</p>
+        </div>
+        <div class="project">
+          <h2>Gignal</h2>
+          <p>Gignal aggregated content created at events and presented it on your site and on physical screens.</p>
+        </div>
+        <div class="project">
+          <h2><a href="https://lorem.tech/" class="inherit">Lorem</a></h2>
+          <p>Hosted content management for static websites.</p>
+        </div>
+        <div class="project">
+          <h2>The Neverlaunched</h2>
+          <ul class="small">
+            <li><a href="http://www.konfect.com/" class="inherit">Konfect</a> ~ Social network connection manager.</li>
+            <li>SwipeSave ~ Savings concept.</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h2><a href="https://svedig.com/">Svedig</a></h2>
+          <p>Exercise with friends, in each your home.</p>
+        </div>
+        <div class="project">
+          <h2><a href="./munique/">Muniqué</a></h2>
+          <p>Newsletter reader.</p>
+        </div>
+        <div class="project">
+          <h2><a href="https://emojoe.app/">Emojoe</a></h2>
+          <p>Accountability.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
